@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0F0326;
+    font-family: 'InterThin';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    width: 100%;
+    border-top: 1px solid #F5F7DC30;
+    border-bottom: 1px solid #F5F7DC30; 
+    box-shadow: 0 0px 10px #F5F7DC30;
+    
+    margin-top: 81px;
+}
+.container {
+    max-width: 1161px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo {
+    position: relative;
+}
+.nav .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list-item a{
+    font-family: 'InterThin';
+    font-weight: 250;
+    font-size: 24px;
+    color: #f5f7dc;
+}
+.nav__list {
+    display: flex;
+    gap:100px;
+}
+.telegram span {
+    font-weight: 250;
+    font-size: 24px;
+    font-family: 'InterThin';
+    color: #f5f7dc;
+    text-transform: capitalize;
+}
+.telegram {
+    display: flex;
+    align-items: center;
+    gap:3px;
+    position: relative;
+}
+.line {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:-81px;
+}
+.line-body {
+
+    width: 1.3px;
+    box-shadow: 0 0px 10px #F5F7DC30;
+    background: #F5F7DC30;
+}
+.line img {
+    width: 30px;
+    margin-top: -5px;
+}
+.logo .line:nth-child(1) {
+    left:-30px; 
+}
+.logo .line:nth-child(1) .line-body {
+    height: 517px;
+}
+.logo .line:nth-child(3) {
+    right: -30px;
+}
+.logo .line:nth-child(3) .line-body {
+    height: 683px;
+}
+
+.telegram .line:nth-child(1) {
+    left:-30px; 
+}
+.telegram .line:nth-child(1) .line-body {
+    height: 907px;
+}
+
+.telegram .line:nth-child(4) {
+    right:-30px; 
+}
+.telegram .line:nth-child(4) .line-body {
+    height: 575px;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 96px;
+    color: #f5f7dc;
+    display: flex;
+    font-family: 'GropledBold';
+}
+.plane {
+    position: absolute;
+    top: -41px;
+    left: 91px;
+}
+.red {
+    position: relative;
+    color:#E65F5C;
+}
+.main__screen {
+    padding-top: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 687px;
+}
+.main__screen-content h3 {
+    font-weight: 400;
+    font-size: 54px;
+    color: #f5f7dc;
+    margin: 40px 0 67px;
+}
+.main__screen-button {
+    padding: 16px 66px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1e1e1e;
+    font-family: 'GropledBold';
+    background: #B5D99C;
+    border:none;
+    box-shadow: 4px 4px 100px #F5F7DC60;
+}
+.quations {
+    padding-bottom: 83px;
+}
+.quations__content {
+    position: relative;
+}
+.quations__window {
+    padding: 53px 87px;
+    backdrop-filter: blur(100px);
+    box-shadow: inset 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+    
+    border-radius: 30px;
+    border:1px solid #B5D99C;
+    background: linear-gradient(270deg, rgba(217, 217, 217, 0.4) 0%, rgba(217, 217, 218, 0.4) -138.38%, rgba(110, 110, 110, 0.4) 63.32%, rgba(217, 217, 217, 0.4) 1000%)
+}
+
+.quations__window h3 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #f5f7dc;
+    font-family: 'GropledBold';
+}
+.quations__list {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap:53px;
+    margin-top: 63px;
+}
+.quations__list-item {
+    font-weight: 400;
+    font-size: 32px;
+    color: #f5f7dc;
+    display: flex;
+    gap:11px;
+    align-items: center;
+}
+.num {
+    font-weight: 700;
+    font-size: 96px;
+    background: linear-gradient(164deg, #e65f5c 0%, #b5d99c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'GropledBold';
+}
+.circles {
+    position: absolute;
+    top: 62px;
+    left: -88px;
+    width: 400px;
+}
+.services .container {
+    padding: 100px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services h2 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #f5f7dc;
+    font-family: 'GropledBold';
+    padding: 26px 67px;
+    border-radius: 30px;
+    background: #e65f5c;
+    display: inline-block;
+}
+
+
+.services__list-item {
+    border-radius: 30px;
+    background: #B5D99C;
+    display: flex;
+    gap:15px;
+    align-items: center;
+    padding: 14px 16px;
+    justify-content: center;
+}
+
+.services__list-item img {
+    width: 50px;
+    height: 50px;
+}
+.services__list-item span {
+    font-weight: 400;
+    font-size: 32px;
+    color: #0f0326;
+    text-wrap: nowrap;
+}
+.services__list {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap:30px
+}
+.services__list-item:nth-child(2) {
+    width: 635px;
+}
+.services__list-item:nth-child(2) {
+    width: 455px;
+}
+.services__list-item:nth-child(3) {
+    width: 573px;
+}
+.services__list-item:nth-child(4) {
+    width: 517px;
+}
+.services__list-item:nth-child(5) {
+    width: 619px;
+}
+.services__list-item:nth-child(6) {
+    width: 461px;
+}
+
+.steps {
+    padding: 140px 0 0; 
+}
+.steps-content h2 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #b5d99c;
+    font-family: 'GropledBold';
+    text-align: center;
+}
+.arrow {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border:1px solid #b5d99c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-down {
+    transform: rotate(180deg);
+}
+.steps-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:34px;
+    margin-top: 40px;
+}
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.steps-list-item {
+    padding: 29px 74px;
+    border: 1px solid #b5d99c;
+    border-radius: 30px;
+    background: linear-gradient(270deg, rgba(217, 217, 217, 0.4) 0%, rgba(217, 217, 217, 0.4) 13.62%, rgba(110, 110, 110, 0.4) 30.32%, rgba(217, 217, 217, 0.4) 1844440%);
+}
+.steps-list-item span {
+    font-weight: 700;
+    font-size: 36px;
+    color: #e65f5c;
+    font-family: 'GropledBold';
+}
+.steps-list-item p {
+    font-weight: 300;
+    font-size: 24px;
+    color: #f5f7dc;
+}
