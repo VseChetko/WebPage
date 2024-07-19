@@ -299,6 +299,10 @@ h1 {
     display: flex;
     flex-direction: column;
     gap:30px;
+    scroll-snap-type: y mandatory;
+    height: 450px;
+    overflow-y: auto;
+    scroll-snap-type: both mandatory;
 }
 .steps-list-item {
     padding: 29px 74px;
@@ -316,4 +320,215 @@ h1 {
     font-weight: 300;
     font-size: 24px;
     color: #f5f7dc;
+}
+.design-window {
+    position: relative;
+}
+.design-window__content {
+    background: #B5D99C;
+    border-radius: 30px;
+    padding: 43px 63px;
+}
+
+
+.design-window__content h4 {
+    font-family: 'GropledBold';
+    font-weight: 700;
+    font-size: 64px;
+    color: #e65f5c;
+}
+.design-window__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:30px;
+    margin-top: 30px;
+}
+.design-window__left-container {
+    font-weight: 400;
+    font-size: 30px;
+    color: #0f0326;
+}
+.design-window__right-container {
+    background: url('../assets/image/design.png');
+    width: 320px;
+    height: 310px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ceises .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.ceises-header {
+    font-weight: 700;
+    font-size: 64px;
+    color: #b5d99c;
+    font-family: 'GropledBold';
+}
+.ceises__text {
+    font-weight: 400;
+    font-size: 30px;
+    color: #f5f7dc;
+    max-width: 1122px;
+    margin: 60px 0;
+}
+.ceises__text p span {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 153%;
+    color: #e65f5c;
+}
+.ceises-subheader {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 115%;
+    color: #f5f7dc;
+    font-family: 'GropledBold';
+}
+
+.ceises__list-item {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 125%;
+    color: #f5f7dc;
+    list-style:auto;
+    align-items: center;
+}
+.ceises__list {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap:63px
+}
+.ceises__list-item:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ceises__list-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:53px;
+}
+.ceises__list-item-text {
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+}
+
+.ceises-image {
+    box-shadow: 0 4px 100px 5px rgba(245, 247, 220, 0.4);
+    border-radius: 31px;
+}
+.ceises__list-item-text li {
+    display: flex;
+    gap:8px;
+}
+.ceises__list-item {
+    position: relative;
+}
+.ceises-circle {
+    position: absolute;
+    z-index: -1;
+}
+.ceises-circle.first{
+    left:-350px
+}
+
+.ceises-circle.second{
+    right:-350px;
+    transform: rotateY(180deg);
+}
+
+.background-text {
+    position: absolute;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(245, 247, 220, 0.3);
+    font-family: 'GropledBold';
+    left:0;
+    display: flex;
+    flex-direction: column;
+    gap:55px;
+    transform: rotate(-5deg) translate(-20%);
+}
+.background-text p{
+    width: 3400px;
+}
+section.ceises {
+    overflow-x: hidden;
+}
+
+.prices-header {
+    font-weight: 700;
+    font-size: 64px;
+    color: #b5d99c;
+    font-family: 'GropledBold';
+}
+
+.prices .container {
+    text-align: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.prices {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.prices__list-item {
+    backdrop-filter: blur(100px);
+    background: rgb(53,44,70);
+    background: linear-gradient(90deg, rgba(53,44,70,1) 24%, rgba(48,38,67,1) 100%);
+    border-radius: 30px;
+    border:2px solid #B5D99C;
+
+    padding: 40px 10px;
+}
+
+.prices__list-item h5 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #e65f5c;
+    font-family: 'GropledBold';
+}
+
+.prices__list-item span {
+    font-weight: 700;
+    font-size: 24px;
+    color: #b5d99c;
+}
+
+.prices__list-text {
+    font-weight: 300;
+    font-size: 20px;
+    color: #f5f7dc;
+    text-align: start;
+    list-style: disc;
+    margin-top: 30px;
+}
+
+ul.prices__list {
+    margin-top: 58px;
+    padding-bottom: 110px;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-content: center;
+    text-align: start;
+    
+}
+.prices__list-item {
+    padding-left: 30px;
 }
