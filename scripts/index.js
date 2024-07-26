@@ -24,7 +24,13 @@ const list = document.querySelector('.steps-list');
                 el.style.transform = 'translateY(-100%)'
                 el.style.position = 'absolute';
                 fallItems[index].style.marginBottom = 0;
-                fallBodys[index].style.boxShadow = 'none'
+                fallBack[index].style.opacity = 1;
+                setTimeout(()=>{
+                    fallBack[index].style.opacity = 0;
+                },300)
+                
+                fallBodys[index].style.boxShadow = 'none';
+                fallBodys[index].style.opacity = 0;
                 fallBack[index].style.transform = 'translateY(-78%)'
                 
             })
@@ -35,6 +41,8 @@ const list = document.querySelector('.steps-list');
             fallItems[index].style.transition = 'all 0.3s ease';
             fallItems[index].style.marginBottom = fallBodys[index].offsetHeight + 'px';
             fallBodys[index].style.transform = 'none';
+            fallBack[index].style.opacity = 1;
+            fallBodys[index].style.opacity = 1;
             fallBodys[index].style.boxShadow =  `0 4px 40px 0 rgba(245, 247, 220, 0.4)`; 
             fallBack[index].style.transform = 'translateY(-99%)';
         }
@@ -122,7 +130,14 @@ const list = document.querySelector('.steps-list');
                     event.preventDefault();
                     const targetId = link.getAttribute('href').substring(1);
                     const targetElement = document.getElementById(targetId);
-        
+                    
+                    body.style.overflow = 'auto';
+                    mobCont.style.transform = 'translateX(-100%)';
+                    setTimeout(()=>{
+                        mob.style.display = 'none'
+                    body.style.overflow = 'auto';
+                    },300)
+
                     if (targetElement) {
                         targetElement.scrollIntoView({
                             behavior: 'smooth'
