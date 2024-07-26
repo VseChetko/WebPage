@@ -146,4 +146,11 @@ const list = document.querySelector('.steps-list');
                 });
             });
       
- 
+            const scrollList = document.querySelector('.steps-list');
+            const scrollListItem = document.querySelector('.steps-list-item');
+            
+            // Преобразование gap в число
+            const gap = parseInt(getComputedStyle(scrollList).gap) || 0;
+            
+            // Высота равна высоте элемента списока, умноженной на количество элементов, плюс gap
+            scrollList.style.height = `${(scrollListItem.offsetHeight + gap) * 3}px`;

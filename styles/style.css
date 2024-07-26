@@ -1059,9 +1059,9 @@ ul.prices__list {
     position: absolute;
     top: 50%;
     left: -2%;
-    -webkit-transform: skewY(-6deg) translateY(-50%);
-        -ms-transform: skewY(-6deg) translateY(-50%);
-            transform: skewY(-6deg) translateY(-50%);
+    -webkit-transform: skewY(-3deg) translateY(-50%);
+        -ms-transform: skewY(-3deg) translateY(-50%);
+            transform: skewY(-3deg) translateY(-50%);
     border-radius: 30px;
 }
 .form__content-right span {
@@ -1440,6 +1440,10 @@ color: rgba(15, 3, 38, 0.2);
             box-shadow: 0 1px 50px 1px #f5f7dc;
 }
 
+.form__content-right a {
+    color:#F5F7DC;
+    font-size: clamp(0.5625rem, 0.2757rem + 1.434vw, 1.5rem);
+}
 @media (max-width:1023px) and (min-width:767px) {
     .services__list-item span {
         font-size: 18px;
@@ -1517,7 +1521,7 @@ color: rgba(15, 3, 38, 0.2);
         margin-bottom: 30px;
     }
     .quations__window {
-        padding: 36px 47px;
+        padding: 36px 18px;
         margin: 0 auto;
         max-width: 332px;
     }
@@ -1714,5 +1718,20 @@ color: rgba(15, 3, 38, 0.2);
     }
     .services__list-item span {
         font-size: 13px;
+    }
+    .quations__list {
+        gap:16px;
+    }
+    .circles {
+        position: absolute;
+        top: 166px;
+        left: -38px;
+        width: 146px;
+    }
+    .services h2 {
+        padding: 10px 25px;
+    }
+    .services__list {
+        margin-top: 30px;
     }
 }
