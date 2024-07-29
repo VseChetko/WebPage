@@ -153,4 +153,4 @@ const list = document.querySelector('.steps-list');
             const gap = parseInt(getComputedStyle(scrollList).gap) || 0;
             
             // Высота равна высоте элемента списока, умноженной на количество элементов, плюс gap
-            scrollList.style.height = `${(scrollListItem.offsetHeight + gap) * 3}px`;
+            scrollList.style.height = `${(scrollListItem.offsetHeight + gap) * 2.9}px`;

@@ -145,7 +145,7 @@ ul, ol {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(1.75rem, 0.4498rem + 6.501vw, 5.8rem);
+    font-size: clamp(2rem, 0.7763rem + 6.1185vw, 6rem);
     color: #f5f7dc;
     text-wrap: nowrap;
     font-family: 'GropledBold';
@@ -198,7 +198,7 @@ h1 {
     position: relative;
 }
 .quations__window {
-    padding: 53px 87px;
+    padding: 53px 23px 87px 53px;
     -webkit-backdrop-filter: blur(100px);
             backdrop-filter: blur(100px);
     -webkit-box-shadow: inset 0 4px 4px 0 rgba(255, 255, 255, 0.25);
@@ -222,7 +222,7 @@ h1 {
     display: grid;
     -ms-grid-columns: 1fr 53px 1fr 53px 1fr;
     grid-template-columns: repeat(3, 1fr);
-    gap:53px;
+    justify-content: space-between;
     margin-top: 63px;
 }
 .quations__list-item {
@@ -302,6 +302,7 @@ h1 {
     font-weight: 400;
     color: #0f0326;
     text-wrap: nowrap;
+    font-size: clamp(0.8125rem, 0.5066rem + 1.5296vw, 1.8125rem);
 }
 .services__list {
     margin-top: 60px;
@@ -441,7 +442,7 @@ h1 {
 }
 .steps-list-item p {
     font-weight: 300;
-    font-size: clamp(1.25rem, 1.1735rem + 0.3824vw, 1.5rem);
+    font-size: clamp(0.8125rem, 0.6022rem + 1.0516vw, 1.5rem);
     color: #f5f7dc;
 }
 .design-window {
@@ -1446,10 +1447,11 @@ color: rgba(15, 3, 38, 0.2);
 }
 @media (max-width:1023px) and (min-width:767px) {
     .services__list-item span {
-        font-size: 18px;
+        font-size: 21px;
     }
     
 }
+
 @media(min-width:1200px) {
     .services__list-item span {
 
@@ -1473,7 +1475,7 @@ color: rgba(15, 3, 38, 0.2);
     .plane {
         position: absolute;
         top: -6vw;
-        left: 5vw;
+        left: 6.4vw;
         width: 13vw;
     }
     .telegram {
@@ -1543,7 +1545,7 @@ color: rgba(15, 3, 38, 0.2);
     }
     .design-window__content {
 
-        padding: 43px 35px 15px;
+        padding: 20px 20px 15px;
     }
     .ceises__list-item {
         display: -webkit-box;
@@ -1605,6 +1607,12 @@ color: rgba(15, 3, 38, 0.2);
         font-family: 'GropledBold';
         width: 50px;
         line-height: 30px;
+    }
+    .prices__list-text {
+        margin-top: 15px;
+    }
+    .full-list-content {
+        margin-bottom: 30px;
     }
     .circles {
         position: absolute;
@@ -1717,7 +1725,7 @@ color: rgba(15, 3, 38, 0.2);
         margin-top: 40px;
     }
     .services__list-item span {
-        font-size: 13px;
+        font-size: 14px;
     }
     .quations__list {
         gap:16px;
@@ -1733,5 +1741,24 @@ color: rgba(15, 3, 38, 0.2);
     }
     .services__list {
         margin-top: 30px;
+    }
+    .main__screen-button {
+        padding: 8px 20px;
+    }
+    .main__screen-content h3 {
+        margin: 20px 0 36px;
+    }
+}
+
+@media (max-width:1200px) and (min-width:1023px) {
+    .services__list-item {
+        width: auto!important;
+    }
+}
+@media (max-width: 467px) {
+    .plane {
+        position: absolute;
+        top: -6vw;
+        left: 7.7vw;
     }
 }
