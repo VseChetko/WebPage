@@ -1381,6 +1381,14 @@ color: rgba(15, 3, 38, 0.2);
             -ms-flex-pack: center;
                 justify-content: center;
     }
+    .laptop {
+        width: 120px;
+        height: 101px;
+    }
+    .words {
+        width: 200px;
+        height: 200px;
+    }
     .services h2 {
         padding: 5px 52px;
     }
@@ -1489,6 +1497,15 @@ color: rgba(15, 3, 38, 0.2);
         display: none;
     }
 
+    .laptop {
+        width: 99px;
+        height: 81px;
+    }
+    .words {
+        width: 160px;
+        height: 154px;
+    }
+
     .burger {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1500,6 +1517,12 @@ color: rgba(15, 3, 38, 0.2);
         left: 6.4vw;
         width: 13vw;
     }
+
+    .design-window__right-container {
+        width: auto!important;
+        height: auto!important;
+    }
+
     .telegram {
         display: none;
     }
@@ -1567,7 +1590,7 @@ color: rgba(15, 3, 38, 0.2);
     }
     .design-window__content {
 
-        padding: 20px 20px 15px;
+        padding: 20px 20px 35px;
     }
     .ceises__list-item {
         display: -webkit-box;
