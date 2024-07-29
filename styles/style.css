@@ -475,11 +475,33 @@ h1 {
     color: #0f0326;
 }
 .design-window__right-container {
-    background: url('../assets/image/design.png');
     width: 320px;
     height: 310px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.laptop {
+    width: 180px;
+    height: 150px;
+}
+
+.words {
+    position: absolute;
+    margin: auto;
+    width: 320px;
+    height: 320px;
+    animation: spin 6s linear infinite ;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .ceises .container {
