@@ -145,12 +145,25 @@ const list = document.querySelector('.steps-list');
                     }
                 });
             });
+
+            function resizeList() {
+                setTimeout(()=> {
+                    const scrollList = document.querySelector('.steps-list');
+                    const scrollListItem = document.querySelectorAll('.steps-list-item');
+    
+                    
+                    const gap = 25;
+    
+                    alert(`${(scrollListItem[0].offsetHeight + gap) * 3}px`);
+                    alert(scrollListItem[0].offsetHeight);
+                    
+                    scrollList.style.height = `${(scrollListItem[0].offsetHeight + gap) * 3}px`;
+                }, 100)
+                
+            }
+
+            resizeList();
       
-            const scrollList = document.querySelector('.steps-list');
-            const scrollListItem = document.querySelector('.steps-list-item');
-            
-            // Преобразование gap в число
-            const gap = parseInt(getComputedStyle(scrollList).gap) || 0;
-            
-            // Высота равна высоте элемента списока, умноженной на количество элементов, плюс gap
-            scrollList.style.height = `${(scrollListItem.offsetHeight + gap) * 2.9}px`;
+            document.addEventListener('DOMContentLoaded', resizeList)
+            document.addEventListener('resize', resizeList);
+           
