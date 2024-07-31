@@ -153,9 +153,6 @@ const list = document.querySelector('.steps-list');
     
                     
                     const gap = 25;
-    
-                    alert(`${(scrollListItem[0].offsetHeight + gap) * 3}px`);
-                    alert(scrollListItem[0].offsetHeight);
                     
                     scrollList.style.height = `${(scrollListItem[0].offsetHeight + gap) * 3}px`;
                 }, 100)
