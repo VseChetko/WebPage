@@ -246,6 +246,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'GropledBold';
+    line-height: 44px;
 }
 .circles {
     position: absolute;
@@ -275,6 +276,7 @@ h1 {
     border-radius: 30px;
     background: #e65f5c;
     display: inline-block;
+    line-height: 22px;
 }
 
 
@@ -443,6 +445,7 @@ h1 {
     font-weight: 700;
     font-size: clamp(1.25rem, 0.4087rem + 4.2065vw, 4rem);
     color: #e65f5c;
+    line-height: 22px;
 }
 .design-window__container {
     display: -ms-grid;
@@ -738,7 +741,6 @@ ul.prices__list {
 .full-list h2 {
     font-weight: 700;
     font-size: clamp(1.25rem, 0.4087rem + 4.2065vw, 4rem);
-    line-height: 0%;
     color: #f5f7dc;
     font-family: 'GropledBold';
    
